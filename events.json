@@ -62,7 +62,7 @@
       "events": [
         { "date": "2026-06-05", "title": "Cum de Manuel", "tag": "Cumpleaños" },
         { "date": "2026-06-04", "title": "Cum de Jasmin", "tag": "Cumpleaños" },
-        { "date": "2026-06-07", "title": "Batalla de Arica y Día de la Bandera", "tag": "Feriado" },
+        { "date": "2026-06-07", "title": "Día de la Bandera", "tag": "Feriado" },
         { "date": "2026-06-13", "title": "Cum de Barral", "tag": "Cumpleaños" },
         { "date": "2026-06-17", "title": "Cum de Jorge", "tag": "Cumpleaños" },
         { "date": "2026-06-29", "title": "San Pedro y San Pablo", "tag": "Feriado" }
@@ -76,7 +76,7 @@
         { "date": "2026-07-10", "title": "Cum de Miguel", "tag": "Cumpleaños" },
         { "date": "2026-07-14", "title": "Cum de Jeremy", "tag": "Cumpleaños" },
         { "date": "2026-07-20", "title": "Cum de Musur", "tag": "Cumpleaños" },
-        { "date": "2026-07-23", "title": "Día de la Fuerza Aérea del Perú", "tag": "Feriado" },
+        { "date": "2026-07-23", "title": "Día de la FAP", "tag": "Feriado" },
         { "date": "2026-07-28", "title": "Fiestas Patrias", "tag": "Feriado" },
         { "date": "2026-07-29", "title": "Fiestas Patrias", "tag": "Feriado" }
       ]
@@ -92,7 +92,7 @@
         { "date": "2026-08-08", "title": "Cum de Oscar", "tag": "Cumpleaños" },
         { "date": "2026-08-12", "title": "Cum de Olenka", "tag": "Cumpleaños" },
         { "date": "2026-08-28", "title": "Cum de Kan", "tag": "Cumpleaños" },
-        { "date": "2026-08-30", "title": "Santa Rosa de Lima", "tag": "Feriado" }
+        { "date": "2026-08-30", "title": "Santa Rosa", "tag": "Feriado" }
       ]
     },
     {
@@ -110,18 +110,18 @@
       "image": "img/Octubre.webp",
       "events": [
         { "date": "2026-10-08", "title": "Combate de Angamos", "tag": "Feriado" },
-        { "date": "2026-10-08", "title": "Cum de Christina", "tag": "Cumpleaños" },
         { "date": "2026-10-14", "title": "Cum de Rony", "tag": "Cumpleaños" },
         { "date": "2026-10-27", "title": "Cum de Freddy", "tag": "Cumpleaños" }
-      ]
-    },
-    {
-      "id": 11,
-      "name": "Noviembre",
-      "image": "img/Noviembre.webp",
-      "events": [
+    ]
+},
+{
+    "id": 11,
+    "name": "Noviembre",
+    "image": "img/Noviembre.webp",
+    "events": [
         { "date": "2026-11-01", "title": "Día de Todos los Santos", "tag": "Feriado" },
         { "date": "2026-11-01", "title": "Cum de Akira", "tag": "Cumpleaños" },
+        { "date": "2026-10-08", "title": "Cum de Christina", "tag": "Cumpleaños" },
         { "date": "2026-11-10", "title": "Cum de German", "tag": "Cumpleaños" }
       ]
     },
