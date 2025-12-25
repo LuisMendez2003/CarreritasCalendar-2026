@@ -1,0 +1,142 @@
+{
+  "year": 2026,
+  "months": [
+    {
+      "id": 1,
+      "name": "Enero",
+      "image": "img/Enero.webp",
+      "events": [
+        { "date": "2026-01-01", "title": "Año Nuevo", "tag": "Feriado" },
+        { "date": "2026-01-05", "title": "Cumpleaños de Luis", "tag": "Cumpleaños" },
+        { "date": "2026-01-20", "title": "Cumpleaños de Eduardo", "tag": "Cumpleaños" },
+        { "date": "2026-01-23", "title": "Cumpleaños de Lestter", "tag": "Cumpleaños" },
+        { "date": "2026-01-23", "title": "Cumpleaños de Marco", "tag": "Cumpleaños" }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Febrero",
+      "image": "img/Febrero.webp",
+      "events": [
+        { "date": "2026-02-09", "title": "Cumpleaños de Bebote", "tag": "Cumpleaños" },
+        { "date": "2026-02-12", "title": "Cumpleaños de Javier", "tag": "Cumpleaños" }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Marzo",
+      "image": "img/Marzo.webp",
+      "events": [
+        { "date": "2026-03-02", "title": "Cumpleaños de Jean Carlo", "tag": "Cumpleaños" },
+        { "date": "2026-03-15", "title": "Cumpleaños de Cristina", "tag": "Cumpleaños" },
+        { "date": "2026-03-15", "title": "Cumpleaños de Lucia", "tag": "Cumpleaños" }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Abril",
+      "image": "img/Abril.webp",
+      "events": [
+        { "date": "2026-04-02", "title": "Jueves Santo", "tag": "Feriado" },
+        { "date": "2026-04-03", "title": "Viernes Santo", "tag": "Feriado" },
+        { "date": "2026-04-21", "title": "Cumpleaños de Carla", "tag": "Cumpleaños" },
+        { "date": "2026-04-28", "title": "Cumpleaños de Cowman", "tag": "Cumpleaños" },
+        { "date": "2026-04-29", "title": "Cumpleaños de Josue", "tag": "Cumpleaños" }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Mayo",
+      "image": "img/Mayo.webp",
+      "events": [
+        { "date": "2026-05-01", "title": "Día del Trabajo", "tag": "Feriado" },
+        { "date": "2026-05-07", "title": "Cumpleaños de McFly", "tag": "Cumpleaños" },
+        { "date": "2026-05-07", "title": "Cumpleaños de Erly", "tag": "Cumpleaños" },
+        { "date": "2026-05-25", "title": "Cumpleaños de Delma", "tag": "Cumpleaños" }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Junio",
+      "image": "img/Junio.webp",
+      "events": [
+        { "date": "2026-06-05", "title": "Cumpleaños de Manuel", "tag": "Cumpleaños" },
+        { "date": "2026-06-04", "title": "Cumpleaños de Jasmin", "tag": "Cumpleaños" },
+        { "date": "2026-06-07", "title": "Batalla de Arica y Día de la Bandera", "tag": "Feriado" },
+        { "date": "2026-06-13", "title": "Cumpleaños de Barral", "tag": "Cumpleaños" },
+        { "date": "2026-06-17", "title": "Cumpleaños de Jorge", "tag": "Cumpleaños" },
+        { "date": "2026-06-29", "title": "San Pedro y San Pablo", "tag": "Feriado" }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Julio",
+      "image": "img/Julio.webp",
+      "events": [
+        { "date": "2026-07-10", "title": "Cumpleaños de Miguel", "tag": "Cumpleaños" },
+        { "date": "2026-07-14", "title": "Cumpleaños de Jeremy", "tag": "Cumpleaños" },
+        { "date": "2026-07-20", "title": "Cumpleaños de Musur", "tag": "Cumpleaños" },
+        { "date": "2026-07-23", "title": "Día de la Fuerza Aérea del Perú", "tag": "Feriado" },
+        { "date": "2026-07-28", "title": "Fiestas Patrias", "tag": "Feriado" },
+        { "date": "2026-07-29", "title": "Fiestas Patrias", "tag": "Feriado" }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Agosto",
+      "image": "img/Agosto.webp",
+      "events": [
+        { "date": "2026-08-04", "title": "Cumpleaños de Renzito", "tag": "Cumpleaños" },
+        { "date": "2026-08-06", "title": "Batalla de Junín", "tag": "Feriado" },
+        { "date": "2026-08-06", "title": "Cumpleaños de Nicolas", "tag": "Cumpleaños" },
+        { "date": "2026-08-08", "title": "Cumpleaños de Oscar", "tag": "Cumpleaños" },
+        { "date": "2026-08-12", "title": "Cumpleaños de Olenka", "tag": "Cumpleaños" },
+        { "date": "2026-08-28", "title": "Cumpleaños de Kan", "tag": "Cumpleaños" },
+        { "date": "2026-08-30", "title": "Santa Rosa de Lima", "tag": "Feriado" }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Septiembre",
+      "image": "img/Septiembre.webp",
+      "events": [
+        { "date": "2026-09-13", "title": "Cumpleaños de Estiven", "tag": "Cumpleaños" },
+        { "date": "2026-09-13", "title": "Cumpleaños de Dieguito", "tag": "Cumpleaños" }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Octubre",
+      "image": "img/Octubre.webp",
+      "events": [
+        { "date": "2026-10-08", "title": "Combate de Angamos", "tag": "Feriado" },
+        { "date": "2026-10-08", "title": "Cumpleaños de Christina", "tag": "Cumpleaños" },
+        { "date": "2026-10-14", "title": "Cumpleaños de Rony", "tag": "Cumpleaños" },
+        { "date": "2026-10-27", "title": "Cumpleaños de Freddy", "tag": "Cumpleaños" }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Noviembre",
+      "image": "img/Noviembre.webp",
+      "events": [
+        { "date": "2026-11-01", "title": "Día de Todos los Santos", "tag": "Feriado" },
+        { "date": "2026-11-01", "title": "Cumpleaños de Akira", "tag": "Cumpleaños" },
+        { "date": "2026-11-10", "title": "Cumpleaños de German", "tag": "Cumpleaños" }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Diciembre",
+      "image": "img/Diciembre.webp",
+      "events": [
+        { "date": "2026-12-08", "title": "Inmaculada Concepción", "tag": "Feriado" },
+        { "date": "2026-12-09", "title": "Batalla de Ayacucho", "tag": "Feriado" },
+        { "date": "2026-12-11", "title": "Cumpleaños de Gloria", "tag": "Cumpleaños" },
+        { "date": "2026-12-25", "title": "Navidad", "tag": "Feriado" },
+        { "date": "2026-12-28", "title": "Cumpleaños de Alejandra", "tag": "Cumpleaños" },
+        { "date": "2026-12-30", "title": "Cumpleaños de Bryan", "tag": "Cumpleaños" }
+      ]
+    }
+  ]
+}
