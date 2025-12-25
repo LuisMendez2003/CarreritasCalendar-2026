@@ -16,11 +16,51 @@ body{
   letter-spacing: 0.08em;
 }
 
+/* =========================
+   TOPBAR
+========================= */
+
+.topbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
 h1{
   text-align: center;
   margin: 10px 0 18px;
   font-size: 2rem;
 }
+
+.back{
+  position: absolute;
+  left: 0;
+  border: 1px solid var(--border);
+  background: #fff;
+  border-radius: 12px;
+  padding: 8px 12px;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(0,0,0,.08);
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+
+.back:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(0,0,0,.12);
+}
+
+.back:active{
+  transform: translateY(0) scale(.99);
+}
+
+.hidden{ display: none; }
+
+/* =========================
+   VISTA ANUAL (GRID)
+========================= */
 
 #year-view{
   display: grid;
@@ -28,12 +68,34 @@ h1{
   gap: 12px;
 }
 
-/* Card del mes */
+/* Centrar la vista mes en la pantalla (cuando se muestra .month-view) */
+#year-view:has(.month-view){
+  min-height: calc(100vh - 120px);
+  display: grid;
+  place-items: center;
+}
+
+/* Card del mes (año) */
 .month{
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 12px;
   background: var(--card);
+
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+
+  cursor: pointer;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+
+.month:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.12);
+}
+
+.month:active{
+  transform: translateY(-1px) scale(0.99);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.10);
 }
 
 .month h2{
@@ -43,15 +105,19 @@ h1{
   letter-spacing: .3px;
 }
 
-/* Portada placeholder */
+/* Portada en vista anual */
 .month-cover{
   width: 100%;
   height: 110px;
   border-radius: 12px;
   margin-bottom: 8px;
-  object-fit: cover;   /* recorta bonito sin deformar */
+  object-fit: cover;
   display: block;
 }
+
+/* =========================
+   CALENDARIO (compartido)
+========================= */
 
 /* Header de días (D L M X J V S) */
 .weekdays{
@@ -99,5 +165,193 @@ h1{
   position: absolute;
   bottom: 0px;
   left: 50%;
-  transform: translate(-50%);
+  transform: translateX(-50%);
+}
+
+/* =========================
+   VISTA MES (HERO + 2 COL)
+========================= */
+
+.month-view{
+  max-width: 1100px;
+  width: min(1100px, 100%);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  background: var(--card);
+  box-shadow: 0 12px 26px rgba(0,0,0,.10);
+  overflow: hidden; /* para que el hero respete bordes redondeados */
+  position: relative;
+}
+
+/* Imagen HERO arriba full */
+.month-hero{
+  padding: 16px;
+}
+
+.month-hero-img{
+  width: 100%;
+  aspect-ratio: 2.5;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+}
+
+.month-body{
+  padding: 18px;
+}
+
+/* Títulos: ENERO | EVENTOS */
+.month-titles{
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+.month-title{
+  text-align: center;  /* como tu maqueta */
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.events-title{
+  text-align: center;  /* como tu maqueta */
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+/* Contenido: calendario | eventos */
+.month-content{
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 14px;
+  align-items: start;
+}
+
+/* Calendario grande */
+.big-grid{
+  width: 100%;
+}
+
+.big-grid .calendar-grid{
+  gap: 10px;
+  padding: 0 6px 12px;
+}
+
+.big-grid .day{
+  height: 54px;
+  font-size: 1.1rem;
+  border-radius: 14px;
+  background: #f9fafb;
+}
+
+.big-grid .day.empty{
+  background: transparent;
+}
+
+/* Lista eventos */
+.events-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+/* Fila 3 columnas */
+.event-row{
+  display: grid;
+  grid-template-columns: 140px 1fr 44px;
+  align-items: center;
+  gap: 10px;
+
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 10px 12px;
+  background: #fff;
+  box-shadow: 0 6px 16px rgba(0,0,0,.06);
+}
+
+.event-date{
+  opacity: .75;
+  font-size: .95rem;
+  white-space: nowrap;
+}
+
+.event-title{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.event-icon{
+  display: grid;
+  place-items: center;
+  font-size: 1.2rem;
+  font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", sans-serif;
+  letter-spacing: 0;
+}
+
+.empty{
+  opacity: .7;
+  text-align: center;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 720px){
+  .month-hero{ height: 160px; }
+
+  .month-titles,
+  .month-content{
+    grid-template-columns: 1fr;
+  }
+
+  .month-title,
+  .events-title{
+    text-align: center;
+  }
+
+  .event-row{
+    grid-template-columns: 110px 1fr 44px;
+  }
+}
+
+.floating-nav{
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9999;
+
+  width: 54px;
+  height: 54px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: #fff;
+  cursor: pointer;
+
+  font-size: 1.4rem;
+  box-shadow: 0 10px 24px rgba(0,0,0,.18);
+  transition: transform .12s ease, box-shadow .12s ease, opacity .12s ease;
+  opacity: 0.92;
+}
+
+.floating-nav:hover{
+  transform: translateY(-50%) scale(1.06);
+  box-shadow: 0 16px 34px rgba(0,0,0,.22);
+  opacity: 1;
+}
+
+.floating-nav:active{
+  transform: translateY(-50%) scale(0.98);
+}
+
+.floating-nav.left{ left: 18px; }
+.floating-nav.right{ right: 18px; }
+
+@media (max-width: 720px){
+  .floating-nav{ display: none; }
 }

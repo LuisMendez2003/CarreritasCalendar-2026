@@ -135,7 +135,8 @@
         { "date": "2026-12-11", "title": "Cumpleaños de Gloria", "tag": "Cumpleaños" },
         { "date": "2026-12-25", "title": "Navidad", "tag": "Feriado" },
         { "date": "2026-12-28", "title": "Cumpleaños de Alejandra", "tag": "Cumpleaños" },
-        { "date": "2026-12-30", "title": "Cumpleaños de Bryan", "tag": "Cumpleaños" }
+        { "date": "2026-12-30", "title": "Cumpleaños de Bryan", "tag": "Cumpleaños" },
+        { "date": "2026-12-31", "title": "NocheVieja", "tag": "Feriado"}
       ]
     }
   ]
