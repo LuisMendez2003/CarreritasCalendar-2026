@@ -1,4 +1,22 @@
 const WEEKDAYS = ["D", "L", "M", "X", "J", "V", "S"];
+let lastView = "year";
+let savedYearScroll = 0;
+let hasSavedYearScroll = false;
+
+function saveYearScroll() {
+  savedYearScroll = window.scrollY || window.pageYOffset || 0;
+  hasSavedYearScroll = true;
+}
+
+function restoreYearScroll() {
+  if (!hasSavedYearScroll) return;
+  const target = savedYearScroll;
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      window.scrollTo(0, target);
+    });
+  });
+}
 
 function daysInMonth(year, monthIndex0) {
   return new Date(year, monthIndex0 + 1, 0).getDate();
@@ -298,10 +316,14 @@ function route(data) {
   const hash = location.hash || "#year";
 
   if (hash.startsWith("#month/")) {
+    if (lastView === "year") saveYearScroll();
     const id = Number(hash.split("/")[1]);
     renderMonth(data, id);
+    lastView = "month";
   } else {
     renderYear(data);
+    lastView = "year";
+    restoreYearScroll();
   }
 }
 
